@@ -1,8 +1,8 @@
 # ⛏️ Pitforge Loot Assistant
 
-> A simple automation and quality-of-life tool for the Minecraft server **Pitforge**.
-
-Built with Python and Minescript.
+> A simple automation and quality-of-life tool for the Minecraft server Pitforge.
+>
+> Built while learning Python and experimenting with Minescript.
 
 ---
 
@@ -15,7 +15,7 @@ Automatically loots valuable items from chests.
 Default loot:
 
 *  Nether Stars
-*  Experience Bottles
+*  Experience Bottles (dragon breath)
 *  Prismarine Crystals
 *  Creeper Spawn Eggs
 
@@ -77,15 +77,9 @@ Clone the repository:
 git clone https://github.com/wewe-codes/Pitforge-Loot-Assistant.git
 ```
 
-or download it as a ZIP file.
+or download pfg.py manually.
 
-### 3️⃣ Install Dependencies
-
-```bash
-pip install pynput
-```
-
-### 4️⃣ Download lib_inv
+### 3️⃣ Download lib_inv
 
 This project uses **lib_inv** by SmaertBoty.
 
@@ -93,7 +87,7 @@ Download:
 
 https://github.com/SmaertBoty/Minescript/tree/main/lib_inv
 
-### 5️⃣ Copy Files
+### 4️⃣ Copy Files
 
 Place both files into your Minescript folder:
 
@@ -104,7 +98,7 @@ Place both files into your Minescript folder:
     └── lib_inv.py
 ```
 
-### 6️⃣ Launch Minecraft
+### 5️⃣ Launch Minecraft
 
 Start Minecraft and run:
 
