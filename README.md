@@ -1,2 +1,5 @@
-# Pitforge-Loot-Assistant
-Automation and quality-of-life tools for Pitforge built with Minescript.
+# ⛏️ Pitforge Loot Assistant
+
+Automation and quality-of-life tools for Pitforge.
+
+Built with Python and Minescript.
