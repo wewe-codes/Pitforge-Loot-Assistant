@@ -57,40 +57,35 @@ def GUI():
 
     while True:
 
-        if not GUItoggle:
-            time.sleep(1)
-            continue
-        if mc.screen_name() != "Chest":
-            time.sleep(0.2)
-            continue
-        for item in mc.container_get_items():
+        if GUItoggle:
+            if mc.screen_name() == "Chest":
+                items = mc.container_get_items()
+                if items:
+                    for item in items:
+                        if item.slot < 27:
+                            if item.item in loot_items:
+                                if item.nbt:
 
-            if item.slot >= 27:
-                continue
+                                    if "500 Experience" in item.nbt:
+                                        UltraXP += 500
 
-            if item.item not in loot_items:
-                continue
+                                    elif "250 Experience" in item.nbt:
+                                        VeryHighXP += 250
 
-            if item.nbt:
-                if "500 Experience" in item.nbt:
-                    UltraXP += 500
+                                    elif "100 Experience" in item.nbt:
+                                        HighXP += 100
 
-                elif "250 Experience" in item.nbt:
-                    VeryHighXP += 250
+                                    elif "50 Experience" in item.nbt:
+                                        NormalXP += 50
 
-                elif "100 Experience" in item.nbt:
-                    HighXP += 100
+                                    elif "25 Experience" in item.nbt:
+                                        lowXP += 25
 
-                elif "50 Experience" in item.nbt:
-                    NormalXP += 50
+                                li.quickmove(item.slot, 1)
 
-                elif "25 Experience" in item.nbt:
-                    lowXP += 25
+                time.sleep(0.4)
 
-            li.quickmove(item.slot, 1)
-
-        time.sleep(0.4)
-
+        time.sleep(0.2)
 
 # ==========================================
 # Threads
